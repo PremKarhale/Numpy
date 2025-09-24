@@ -14,14 +14,14 @@ df=pd.DataFrame(data)
 # print(df)
 
 # print only single  coloumn
-# name = df['Name']
-# print("\n",name)
+name = df['Name']
+print("\n",name)
 
-# # print multiple coloumns 
-# print("\n",df[['Name' ,'Age' ,'Salary']])
+# print multiple coloumns 
+print("\n",df[['Name' ,'Age' ,'Salary']])
 
-# high_salary = df[df['Salary'] >50000]
-# print("\n Name of the Employees whose Salaries are greater than 50K :\n \n",high_salary)
+high_salary = df[df['Salary'] >50000]
+print("\n Name of the Employees whose Salaries are greater than 50K :\n \n",high_salary)
 
 
 # Data filtering on the condition basis 
@@ -30,3 +30,4 @@ sal_greater_fiftyK = df[(df["Salary"]>50000) & (df["Age"] >= 30)]
 # storedSal = sal_greater_fiftyK[["Name" ,"Age" ,"Salary"]]
 only_name = sal_greater_fiftyK["Name"] # It returns me only name 
 print(only_name)
+
