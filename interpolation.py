@@ -2,6 +2,7 @@
 # 2 predicts the realistic value and update the data instead to keeping it null/none
 # 3 smoth trends 
 # 4 avoids data loss 
+# 5 used only for timer series data 
 
 import pandas as pd 
 data = {
