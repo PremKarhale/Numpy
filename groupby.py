@@ -1,3 +1,9 @@
+# 1) sum()
+# 2) mean ()
+# 3) std()
+# 4) count --> gives the count of NAN values in the group 
+# 5) min --> gives the min value in the grp 
+
 import pandas as pd 
 data ={
     "Name": ['Alice Johnson', 'Michael Chen', 'Sarah Williams', 'David Rodriguez', 
