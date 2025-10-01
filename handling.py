@@ -19,7 +19,7 @@ df=pd.DataFrame(data)
 # print(df)
 df['Age'].fillna(df['Age'].mean() , inplace = True)
 print(df)
-df['Salary'].fillna(df['Salary'].mean() ,inplace=True) #fillna('takes the what value to be filled with ')
+df['Salary'].fillna(df['Salary'].mean() ,inplace=True) #fillna('takes what value to be filled with ')
 print(df)
 
 #to drop certain columns from the table 
