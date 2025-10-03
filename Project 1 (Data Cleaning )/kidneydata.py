@@ -57,10 +57,10 @@ y= df['SALES'] # contain only sales data
 x_encoded = pd.get_dummies(x , drop_first=True) # Convert categorical to numeric
 # Split 
 x_train , x_test , y_train , y_test = train_test_split(x_encoded , y , test_size=0.25 , random_state=42)
-# print(x_train)
-# print(x_test)
-# print(y_train)
-# print(y_test)
+print(x_train)
+print(x_test)
+print(y_train)
+print(y_test)
 
 
 
