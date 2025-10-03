@@ -43,8 +43,8 @@ print(df.isnull().sum()) #0
 # print(df["POSTALCODE"].isnull().sum())
 
 
-# sns.pairplot(df)
-# plt.show()
+sns.pairplot(df)
+plt.show()
 
 #unwanted features ! data cleaning 
 df = df.drop(columns=['ORDERNUMBER', 'ORDERDATE', 'PRODUCTCODE', 
