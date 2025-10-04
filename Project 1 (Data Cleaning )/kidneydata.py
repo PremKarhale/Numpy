@@ -54,7 +54,8 @@ df = df.drop(columns=['ORDERNUMBER', 'ORDERDATE', 'PRODUCTCODE',
 x=df.drop(columns= ['SALES'] , axis= 1) # all the df other than sales 
 y= df['SALES'] # contain only sales data
 
-x_encoded = pd.get_dummies(x , drop_first=True) # Convert categorical to numeric
+ # Convert categorical to numeric
+x_encoded = pd.get_dummies(x , drop_first=True)
 # Split 
 x_train , x_test , y_train , y_test = train_test_split(x_encoded , y , test_size=0.25 , random_state=42)
 print(x_train)
