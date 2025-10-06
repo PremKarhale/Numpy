@@ -22,18 +22,21 @@ from sklearn.model_selection import train_test_split
 df = pd.read_csv("sales_data_sample.csv",encoding="latin1")
 
 print(df.shape) 
+
 print(df.describe())
 col = df.columns
+
 print(col.dtype) #object
 
 df.isnull().sum
+
 zeros_count = (df==0).sum()   # () used for the condition purpose 
 print(zeros_count)
 
 print(df.mean(numeric_only=True))
 
 # METHOD TO REMOVE ALL THE NULL\NAN VALUES FROM THE DATASET 
-remove_all_null_values = df.fillna(df.mode().iloc[0] )
+remove_all_null_values = df.fillna(df.mode().iloc[0] )   #.fillna("takes the value to filled with eg: df.mode()iloc[0]")    
 print(remove_all_null_values.isnull().sum().sum()) #0
 df = remove_all_null_values
 print(df.isnull().sum()) #0
